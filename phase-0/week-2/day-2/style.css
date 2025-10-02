@@ -1,0 +1,59 @@
+/* Удобный бокс-модель и базовая типографика */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Визуальные требования: рамка и фон у всех блоков */
+header, nav, main, aside, footer {
+  border: 2px solid #222;
+  background: #fff;
+}
+
+/* Фиксированный header: сверху, 50px, на всю ширину */
+header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 50px;
+  display: flex; align-items: center;
+  padding: 0 16px;
+  background: #f6f7f9;
+  z-index: 10;
+}
+header h1 { margin: 0; font-size: 18px; }
+
+/* Фиксированный footer: снизу, 50px, на всю ширину */
+footer {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  height: 50px;
+  display: flex; align-items: center;
+  padding: 0 16px;
+  background: #f6f7f9;
+  z-index: 10;
+}
+footer h4 { margin: 0; font-size: 16px; }
+
+/* Высота «коридора» между шапкой и подвалом */
+:root { --h-top: 50px; --h-bottom: 50px; }
+
+/* Три колонки занимают всю доступную высоту; контент скроллится внутри */
+nav, main, aside {
+  position: fixed;
+  top: var(--h-top);
+  bottom: var(--h-bottom);
+  overflow: auto;        /* прокрутка внутри каждой области */
+  padding: 16px;
+}
+
+/* Позиционирование и ширины колонок */
+nav   { left: 0;        width: 25vw; background:#fafafa; }
+main  { left: 25vw;     width: 50vw; }
+aside { left: 75vw;     width: 25vw; background:#fafafa; }
+
+/* Небольшая косметика */
+nav ul { margin: 0; padding: 0 0 0 18px; }
+a { color:#0a66c2; text-decoration:none; }
+a:hover { text-decoration:underline; }

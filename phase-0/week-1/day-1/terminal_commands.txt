@@ -1,0 +1,19 @@
+cd ~/michael
+mkdir elbrus-part-time
+cd elbrus-part-time
+mkdir phase-0 phase-1 phase-2 phase-3
+cd phase-0
+mkdir week-0 week-1 week-2 week-3 week-4 week-5 week-6
+rm -r week-0
+cp -r phase-0 phase-1
+cp -r phase-0 phase-2
+cp -r phase-0 phase-3
+cd phase-0/week-1
+mkdir day-1
+cd day-1
+git clone git@github.com:part-time-javascript-elbrus-bootcamp/basic-terminal-work.git
+git clone git@github.com:part-time-javascript-elbrus-bootcamp/first-steps.git
+cd basic-terminal-work
+ls
+touch terminal_commands.txt
+nano terminal_commands.txt
