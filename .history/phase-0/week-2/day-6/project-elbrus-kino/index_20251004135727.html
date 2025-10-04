@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ElbrusKino</title>
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body class="page">
+
+  <!-- ======= ШАПКА ======= -->
+  <header class="header">
+    <div class="container header__row">
+      <a class="logo" target="_blank" href="https://elbrusboot.camp">
+        <img src="movie.svg" alt="ElbrusKino" class="logo__img" />
+        <span class="logo__text"></span>
+      </a>
+
+      <nav class="nav">
+        <a class="nav__link nav__link--active" href="#me">МОЕ</a>
+        <a class="nav__link" href="#kino">КИНО</a>
+        <a class="nav__link" href="#shop">МАГАЗИН</a>
+        <a class="nav__link" href="#purchases">ПОКУПКИ</a>
+        <button class="nav__icon" aria-label="Поиск">🔍</button>
+      </nav>
+
+      <div class="header__right">
+        <form class="search" role="search">
+          <input class="search__input" type="search" placeholder="Поиск" />
+        </form>
+        <button class="avatar" aria-label="Профиль">
+          <img src="img/avatar.jpg" alt="" />
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======= ОСНОВНОЙ КОНТЕНТ ======= -->
+  <main class="main container">
+
+    <!-- Блок: Новое в подписке -->
+    <section class="section">
+      <div class="section__head">
+        <h2 class="section__title">Новое в подписке</h2>
+        <button class="arrow" aria-label="Дальше">›</button>
+      </div>
+
+      <ul class="cards">
+        <!-- Карточка -->
+        <li class="card">
+          <a class="card__link" href="#">
+            <div class="card__poster">
+              <img src="img/poster-1.jpg" alt="Нулевой пациент" />
+              <span class="badge badge--rate">8.4</span>
+              <span class="badge badge--season">Финал сезона</span>
+            </div>
+            <h3 class="card__title">Нулевой пациент</h3>
+            <p class="card__meta">2022, Драма, Детектив</p>
+          </a>
+        </li>
+
+        <li class="card">
+          <a class="card__link" href="#">
+            <div class="card__poster">
+              <img src="img/poster-2.jpg" alt="Мажор 4" />
+              <span class="badge badge--rate">8.3</span>
+              <span class="badge badge--season">Новый сезон</span>
+            </div>
+            <h3 class="card__title">Мажор</h3>
+            <p class="card__meta">2014, Драма, Криминал</p>
+          </a>
+        </li>
+
+        <li class="card">
+          <a class="card__link" href="#">
+            <div class="card__poster">
+              <img src="img/poster-3.jpg" alt="Флешбэк" />
+              <span class="badge badge--rate">5.2</span>
+            </div>
+            <h3 class="card__title">Флешбэк</h3>
+            <p class="card__meta">2022, Боевик, Триллер</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Блок: Рекомендуем посмотреть -->
+    <section class="section">
+      <div class="section__head">
+        <h2 class="section__title">Рекомендуем посмотреть</h2>
+        <button class="arrow" aria-label="Дальше">›</button>
+      </div>
+
+      <ul class="cards">
+        <li class="card">
+          <a class="card__link" href="#">
+            <div class="card__poster">
+              <img src="img/poster-4.jpg" alt="Всё везде и сразу" />
+              <span class="badge badge--rate">8.7</span>
+            </div>
+            <h3 class="card__title">Всё, везде и сразу</h3>
+            <p class="card__meta">2021, Фантастика, Комедия</p>
+          </a>
+        </li>
+
+        <li class="card">
+          <a class="card__link" href="#">
+            <div class="card__poster">
+              <img src="img/poster-5.jpg" alt="Триггер" />
+              <span class="badge badge--rate">6.3</span>
+            </div>
+            <h3 class="card__title">Триггер</h3>
+            <p class="card__meta">2020, Драма</p>
+          </a>
+        </li>
+
+        <li class="card">
+          <a class="card__link" href="#">
+            <div class="card__poster">
+              <img src="img/poster-6.jpg" alt="Постучись в мою дверь" />
+              <span class="badge badge--rate">6.7</span>
+              <span class="badge badge--now">NOW</span>
+            </div>
+            <h3 class="card__title">Постучись в мою дверь</h3>
+            <p class="card__meta">2020, Мелодрама, Комедия</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+</body>
+</html>

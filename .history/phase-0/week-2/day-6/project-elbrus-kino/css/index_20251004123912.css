@@ -1,0 +1,91 @@
+:root{
+  --bg:#0f0f0f; --bg-soft:#151515; --text:#e8e6e3; --muted:#9b968f;
+  --brand:#5a35d8; --brand-2:#2f2bb2; --accent:#ffb703; --green:#49b766; --blue:#44bde2;
+  --radius:14px; --shadow:0 8px 24px rgba(0,0,0,.35);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body.page{margin:0; background:var(--bg); color:var(--text); font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+img{max-width:100%; display:block}
+
+.container{max-width:1200px; margin:0 auto; padding:0 16px}
+
+/* ======= HEADER ======= */
+.header{position:sticky; top:0; z-index:10; background:linear-gradient(90deg,var(--brand),var(--brand-2)); box-shadow:var(--shadow)}
+.header__row{display:flex; align-items:center; gap:24px; height:64px}
+.logo{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff; font-weight:700; letter-spacing:.08em}
+.logo__img{width:50px; height:36px; object-fit:cover; border-radius:6px}
+
+.nav{display:flex; gap:24px; margin-left:12px}
+.nav__link{position:relative; color:#e9e5ff; text-decoration:none; font-weight:700; letter-spacing:.04em; opacity:.85}
+.nav__link:hover{opacity:1}
+.nav__link--active::after{content:""; position:absolute; left:0; bottom:-12px; width:100%; height:3px; background:var(--accent); border-radius:2px}
+
+.header__right{margin-left:auto; display:flex; align-items:center; gap:16px}
+.search{display:flex; align-items:center}
+.search__input{
+  height:36px; width:220px; border:none; border-radius:999px; padding:0 14px;
+  background:rgba(255,255,255,.16); color:#fff; outline:none;
+}
+.search__input::placeholder{color:#ddd}
+
+.avatar{border:none; background:transparent; padding:0; width:36px; height:36px; border-radius:50%; overflow:hidden; cursor:pointer}
+.avatar img{width:100%; height:100%; object-fit:cover}
+
+/* ======= MAIN ======= */
+.main{padding:28px 0 64px}
+
+/* Раздел */
+.section{margin-bottom:38px}
+.section__head{display:flex; align-items:center; justify-content:space-between; margin-bottom:16px; padding:0 6px}
+.section__title{margin:0; font-size:28px; font-weight:800; letter-spacing:.02em}
+.arrow{
+  border:none; background:transparent; color:var(--accent); font-size:34px; line-height:1;
+  cursor:pointer; border-radius:8px; padding:2px 8px;
+}
+
+/* Лента карточек: flex-ряд с переносом */
+.cards{
+  list-style:none; margin:0; padding:0;
+  display:flex; gap:22px; flex-wrap:wrap;
+}
+
+/* Карточка */
+.card{width:calc((100% - 44px)/3);} /* 3 в ряд на десктопе */
+.card__link{display:block; text-decoration:none; color:inherit}
+.card__poster{position:relative; border-radius:14px; overflow:hidden; box-shadow:var(--shadow); background:var(--bg-soft)}
+.card__poster img{aspect-ratio:16/9; width:100%; object-fit:cover}
+
+.card__title{margin:10px 4px 2px; font-size:16px; font-weight:700}
+.card__meta{margin:0 4px 0; color:var(--muted); font-size:14px}
+
+/* Бейджи */
+.badge{
+  position:absolute; top:8px; left:8px;
+  font-size:12px; font-weight:700; color:#111;
+  background:#ffd166; padding:4px 8px; border-radius:8px;
+}
+.badge--rate{background:#ffd166}
+.badge--season{left:auto; right:8px; background:#fff}
+.badge--now{left:auto; right:8px; background:#ff7847; color:#fff}
+
+/* Hover-эффекты */
+.card__poster::after{
+  content:""; position:absolute; inset:0; background:linear-gradient(180deg,transparent 60%, rgba(0,0,0,.45));
+  opacity:0; transition:opacity .2s ease;
+}
+.card__poster:hover::after{opacity:1;}
+
+/* ======= Адаптив ======= */
+@media (max-width: 1024px){
+  .card{width:calc((100% - 22px)/2);} /* 2 в ряд */
+  .search__input{width:180px}
+}
+@media (max-width: 640px){
+  .header__row{height:56px}
+  .nav{gap:14px}
+  .search__input{display:none}
+  .card{width:100%} /* 1 в ряд */
+  .section__title{font-size:22px}
+}
