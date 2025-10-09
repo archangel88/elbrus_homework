@@ -1,0 +1,61 @@
+div {
+    display: inline-block;
+    text-align:center;
+    width: 50%;
+    border: 3px solid rgb(0,0,0,0.5);
+    border-radius: 15px;
+}
+
+.n1{
+    font-family: IBM, bottom;
+    font-weight: 900;
+    font-style: oblique;
+    font-size: 15px;
+    color: green;
+}
+
+.n1 h2{
+   font-family: 'Times New Roman', bottom;
+    font-weight: 900;
+    font-style: oblique;
+    font-size: 20px;
+    color: rgb(27, 187, 187);
+}
+
+.n2{
+    font-family: IBM, bottom;
+    font-weight: 900;
+    font-style: oblique;
+    font-size: 20px;
+    color: rgb(100, 100, 203);
+}
+
+.n2 h2{
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 900;
+    font-style: oblique;
+    font-size: 20px;
+    color: black;
+}
+
+.n3{
+    font-family: 'Plex';
+    font-weight: 900;
+    font-style: oblique;
+    font-size: 22px;
+    color: rgb(140, 93, 93);
+}
+
+.n3 h2{
+   font-family: Mono, bottom;
+    font-weight: 900;
+    font-style: oblique;
+    font-size: 22px;
+    color: rgb(161, 19, 19);
+}
+
+img{
+    top:200;
+    left: 50px;
+    right: 50px;
+}

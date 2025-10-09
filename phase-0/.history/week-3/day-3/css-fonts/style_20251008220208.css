@@ -1,0 +1,6 @@
+div {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    border: 3px solid;
+}

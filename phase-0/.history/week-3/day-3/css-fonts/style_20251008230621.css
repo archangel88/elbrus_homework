@@ -1,0 +1,39 @@
+div {
+    display: inline-block;
+    text-align:center;
+    width: 50%;
+    border: 3px solid rgb(0,0,0,0.5);
+    border-radius: 15px;
+    vertical-align: top;
+}
+
+.n1{
+    font-family: IBM, bottom;
+    font-weight: 900;
+    font-style: oblique;
+    font-size: 35px;
+    color: green;
+}
+
+.n2{
+    font-family: IBM, bottom;
+    font-weight: 900;
+    font-style: oblique;
+    font-size: 35px;
+    color: blue;
+}
+
+.n3{
+    font-family: IBM, bottom;
+    font-weight: 900;
+    font-style: oblique;
+    font-size: 35px;
+    color: red;
+}
+
+/* p{
+    font-family: IBM, cursive;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 17px;
+} */

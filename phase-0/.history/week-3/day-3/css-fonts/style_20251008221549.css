@@ -1,0 +1,8 @@
+div {
+    display: inline-block;
+    text-align: center;
+    width: ratione;
+    border: 3px solid rgb(0,0,0,0.5);
+    border-radius: 15px;
+
+}
