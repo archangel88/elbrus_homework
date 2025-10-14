@@ -1,0 +1,6 @@
+function checkType() {
+    // const inputValue = document.getElementById('userInput').JSON.parse(value);
+    console.log(document.getElementById('userInput').value)
+    const type = typeof inputValue;
+    alert(`Тип введенного значения: ${type}`);
+}
